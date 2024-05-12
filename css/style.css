@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+a, button {
+  cursor: pointer;
+}
+
+.main .br-red {
+  border: 1px solid red;
+}
+.main .br-blue {
+  border: 1px solid blue;
+}
+.main .br-green {
+  border: 1px solid green;
+}
+.main .vostoka {
+  margin-top: 109px;
+}
+.main .vostoka .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .vostoka .container .vostoka__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+}
+.main .vostoka .container .vostoka__text h1 {
+  font-family: "Exo 2";
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 65px;
+  text-align: left;
+  color: #363738;
+}
+.main .vostoka .container .vostoka__text p {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #6B6B6C;
+}
+.main .vostoka .container .vostoka__text a {
+  font-family: "PT Sans";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #363738;
+  border-bottom: 3px solid #FFCE50;
+  transition: all 0.3s linear;
+}
+.main .vostoka .container .vostoka__text a:hover {
+  color: #FFCE50;
+  border-color: #363738;
+}
+.main .vostoka .container .vostoka__img {
+  width: 635px;
+  height: 505px;
+}
+.main .vostoka .container .vostoka__img img {
+  width: 635px;
+  height: 505px;
+}/*# sourceMappingURL=style.css.map */

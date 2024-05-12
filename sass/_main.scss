@@ -1,0 +1,78 @@
+.main {
+  @mixin dfrc($fd: row, $jc: center, $ai: center) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+  }
+
+  .br-red {
+    border: 1px solid red;
+  }
+
+  .br-blue {
+    border: 1px solid blue;
+  }
+
+  .br-green {
+    border: 1px solid green;
+  }
+
+  .vostoka {
+    margin-top: 109px;
+    .container {
+      @include dfrc($jc: space-between);
+      .vostoka__text {
+        @include dfrc($fd: column, $ai: flex-start);
+        gap: 40px;
+        h1 {
+          font-family: "Exo 2";
+          font-size: 52px;
+          font-weight: 600;
+          line-height: 65px;
+          text-align: left;
+          color: $primary-color;
+        }
+
+        p {
+          font-family: "PT Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: $secondary-color;
+        }
+
+        a {
+          font-family: 'PT Sans';
+          font-size: 16px;
+          font-weight: 700;
+          line-height: 24px;
+          text-align: left;
+          color: $primary-color;
+        //   padding-bottom: 10px;
+          border-bottom: 3px solid $yellow;
+          transition: all 0.3s linear;
+          &:hover{
+            color: $yellow;
+            border-color: $primary-color;
+          }
+        }
+      }
+
+      .vostoka__img {
+        width: 635px;
+        height: 505px;
+        img {
+          width: 635px;
+          height: 505px;
+        }
+      }
+    }
+  }
+
+//   end Vostoka style
+
+//   start Poisk style
+
+}
