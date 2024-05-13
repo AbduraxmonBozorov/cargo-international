@@ -189,7 +189,7 @@
     gap: 62px 140px;
 
     article {
-    //   border: 1px solid blue;
+      //   border: 1px solid blue;
       width: 447px;
       height: 80px;
       @include dfrc();
@@ -200,7 +200,6 @@
         height: 80px;
         background-color: #e9e9ec;
         border-radius: 50%;
-        
       }
 
       .article__text {
@@ -217,7 +216,7 @@
           color: $primary-color;
         }
         p {
-          font-family: 'PT Sans';
+          font-family: "PT Sans";
           font-size: 16px;
           font-weight: 400;
           line-height: 24px;
@@ -228,12 +227,309 @@
     }
   }
 
-//   end pochemu style
+  //   end pochemu style
 
-// start our works style
+  // start our works style
 
-.ourWorks{
+  .ourWorks {
     margin-top: 120px;
-}
+    .container {
+      //   border: 1px solid red;
+      h2 {
+        font-family: "Exo 2";
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+        color: $primary-color;
+      }
+      p {
+        // border: 1px solid red;
+        margin-top: 32px;
+        width: 460px;
+        font-family: "PT Sans";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        color: $secondary-color;
+        margin-bottom: 56px;
+      }
+      .cards {
+        @include dfrc($jc: space-between);
+        gap: 30px;
+        .card {
+          border-radius: 10px;
+          width: 393px;
+          height: 440px;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.5s linear;
+          &:hover {
+            transform: scale(1.1);
+          }
+          .card__img {
+            width: 393px;
+            height: 247px;
+            overflow: hidden;
+            img {
+              width: 393px;
+              height: 247px;
+            }
+          }
+
+          .card__text {
+            padding: 24px 34px 32px 32px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 15%);
+            h3 {
+              font-family: "Exo 2";
+              font-size: 20px;
+              font-weight: 600;
+              line-height: 27px;
+              text-align: left;
+              color: $primary-color;
+              margin: 0;
+            }
+            p {
+              margin-top: 16px;
+              margin-bottom: 0;
+              font-family: "PT Sans";
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 24px;
+              text-align: left;
+              color: $secondary-color;
+              //   border: 5px solid black;
+              width: 100%;
+            }
+            a {
+              // border: 1px solid blue;
+              margin-top: 32px;
+              border-bottom: 3px solid $yellow;
+              padding-bottom: 3px;
+              color: $primary-color;
+              transition: all 0.5s ease;
+              &:hover {
+                color: $yellow;
+                border-color: $primary-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  //   end our works style
+
+  //   start clients style
+  .clients {
+    margin-top: 212px;
+    .container {
+      padding: 85px 66px;
+      height: 957px;
+      background-color: $green;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .client__text {
+        width: 40%;
+        // border: 1px solid white;
+        height: 100%;
+        h2 {
+          margin-top: 15px;
+          color: white;
+          font-family: "Exo 2";
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 60px;
+          text-align: left;
+        }
+      }
+
+      .clients__paper {
+        width: 60%;
+        height: 100%;
+        background-color: white;
+        padding: 28px 32px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+
+  .paper__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #d7d7dd;
+    .head__title {
+      width: 274px;
+      p {
+        font-family: "PT Sans";
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 16.5px;
+        text-align: left;
+        color: $secondary-color;
+        margin-bottom: 32px;
+      }
+    }
+  }
+
+  .paper__category {
+    background-color: $green;
+    margin-bottom: 8px;
+    ul {
+      @include dfrc();
+      width: 100%;
+      li {
+        width: 25%;
+        border-right: 1px solid rgba(0, 0, 0, 20%);
+        text-align: center;
+        font-family: "Exo 2";
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 45px;
+        color: white;
+        height: 45px;
+      }
+    }
+  }
+
+  table.paper__table {
+    border-collapse: collapse;
+    width: 588px;
+    // height: 508px;
+    overflow: hidden;
+    margin-bottom: 40px;
+    tr {
+      border-bottom: 1px solid #d7d7dd;
+      width: 100%;
+      display: flex;
+    }
+
+    tr:nth-child(3) {
+      border: none;
+    }
+    td {
+      width: 25%;
+      padding: 16px;
+      border-right: 1px solid rgba(0, 0, 0, 20%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      p {
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18.9px;
+        text-align: left;
+        color: $secondary-color;
+        margin-bottom: 10px;
+      }
+      strong {
+        font-family: "PT Sans";
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 18.9px;
+        text-align: left;
+        color: $primary-color;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: $primary-color;
+        font-family: "PT Sans";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18.9px;
+        text-align: left;
+      }
+    }
+  }
+
+  //   ens clients styel
+
+  // start steps style
+  .steps {
+    margin-top: 120px;
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+    .steps__title {
+      margin-bottom: 48px;
+      h2 {
+        font-family: "Exo 2";
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+        color: $primary-color;
+      }
+    }
+
+    .steps__cards {
+    //   border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      padding-left: 49px;
+      
+
+      .steps__cards__card {
+        padding: 32px 132px 32px 96px;
+        display: flex;
+        gap: 56px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 12%);
+        // border: 1px solid red;
+
+        .steps__card__img{
+            height: 100%;
+        }
+
+        .steps__card__text {
+          display: flex;
+          flex-direction: column;
+          gap: 24px;
+        }
+        h3 {
+          font-family: "Exo 2";
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 25px;
+          text-align: left;
+          color: $primary-color;
+        }
+        .steps__card__text__line {
+          width: 86px;
+          height: 3px;
+          background-color: $yellow;
+        }
+
+        .steps__card__text__p {
+          font-family: "PT Sans";
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+//   end steps style
+
 
 }
