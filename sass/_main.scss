@@ -23,6 +23,7 @@
     .container {
       @include dfrc($jc: space-between);
       .vostoka__text {
+        width: 610px;
         @include dfrc($fd: column, $ai: flex-start);
         gap: 40px;
         h1 {
@@ -41,19 +42,20 @@
           line-height: 24px;
           text-align: left;
           color: $secondary-color;
+          margin-right: 80px;
         }
 
         a {
-          font-family: 'PT Sans';
+          font-family: "PT Sans";
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
           text-align: left;
           color: $primary-color;
-        //   padding-bottom: 10px;
+          //   padding-bottom: 10px;
           border-bottom: 3px solid $yellow;
           transition: all 0.3s linear;
-          &:hover{
+          &:hover {
             color: $yellow;
             border-color: $primary-color;
           }
@@ -63,6 +65,9 @@
       .vostoka__img {
         width: 635px;
         height: 505px;
+        // border: solid red;
+        overflow: hidden;
+
         img {
           width: 635px;
           height: 505px;
@@ -71,8 +76,164 @@
     }
   }
 
-//   end Vostoka style
+  //   end Vostoka style
 
-//   start Poisk style
+  //   start Poisk style
+  .poisk {
+    margin-top: 67px;
+    // border: 1px solid red;
+    .cards {
+      @include dfrc($jc: space-between);
+      padding: 40px 80px;
+      box-shadow: 0px 4px 20px rgba(0, 0, 0, 15%);
+      border-radius: 20px;
+      .card {
+        width: 228px;
+        height: 245px;
+        @include dfrc($fd: column, $ai: flex-start);
+        // border: 1px solid blue;
+        .card__img {
+          width: 92px;
+          height: 92px;
+          background-color: #e9e9ec;
+          @include dfrc();
+          border-radius: 50%;
+        }
+
+        .card__text {
+          margin-top: 24px;
+          //   width: 228px;
+          h1 {
+            font-family: "Exo 2";
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: left;
+          }
+        }
+      }
+
+      .card:nth-child(2) {
+        box-sizing: content-box;
+        padding-left: 64px;
+        border-left: 1px solid #d7d7dd;
+      }
+
+      .card:nth-child(3) {
+        box-sizing: content-box;
+        padding-left: 64px;
+        border-left: 1px solid #d7d7dd;
+      }
+    }
+  }
+
+  //   end poisk style
+
+  // start pochemu  style
+
+  .pochemu {
+    margin: 67px 0;
+    // border: 1px solid red;
+    margin-bottom: 0;
+    .pochemu__img {
+      height: 453px;
+      position: relative;
+      overflow: hidden;
+      .mainImg {
+        position: absolute;
+        left: 3px;
+        z-index: 1;
+        height: 100%;
+        transition: all 0.3s linear;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .pochemu__text {
+        position: absolute;
+        z-index: 2;
+        height: 453px;
+        div {
+          position: relative;
+          width: 420px;
+          height: 453px;
+          img {
+            position: absolute;
+          }
+          h2 {
+            position: absolute;
+            // border: 1px solid red;
+            width: 100%;
+            height: 453px;
+            @include dfrc();
+            font-family: "Exo 2";
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 60px;
+            text-align: left;
+            color: white;
+            margin-left: 80px;
+          }
+        }
+      }
+    }
+  }
+
+  .whyUs {
+    margin-top: 72.5px;
+    // border: 1px solid red;
+    @include dfrc($jc: flex-start);
+    flex-wrap: wrap;
+    padding: 0 66px;
+    gap: 62px 140px;
+
+    article {
+    //   border: 1px solid blue;
+      width: 447px;
+      height: 80px;
+      @include dfrc();
+      gap: 40px;
+      .article__img {
+        @include dfrc();
+        width: 80px;
+        height: 80px;
+        background-color: #e9e9ec;
+        border-radius: 50%;
+        
+      }
+
+      .article__text {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 291px;
+        h3 {
+          font-family: "Exo 2";
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 27px;
+          text-align: left;
+          color: $primary-color;
+        }
+        p {
+          font-family: 'PT Sans';
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 24px;
+          text-align: left;
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+
+//   end pochemu style
+
+// start our works style
+
+.ourWorks{
+    margin-top: 120px;
+}
 
 }
