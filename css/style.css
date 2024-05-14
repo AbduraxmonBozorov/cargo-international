@@ -1273,6 +1273,18 @@ button {
     z-index: 10 !important;
     color: #363738 !important;
   }
+  .pochemu .whyUs article {
+    display: flex;
+    width: 100% !important;
+  }
+  .pochemu .whyUs article h3 {
+    white-space: normal;
+    width: 100% !important;
+  }
+  .ourWorks .container > p {
+    border: 1px solid red;
+    width: 100% !important;
+  }
   .ourWorks .cards {
     display: flex !important;
     flex-direction: column !important;
@@ -1312,7 +1324,11 @@ button {
     width: 100% !important;
   }
   .clients .container .paper .paper__table {
+    border: 1px solid red;
     width: 100% !important;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .steps .steps__card__img {
     display: none !important;
@@ -1331,6 +1347,12 @@ button {
   }
   .ourTeam .team__cards .team__card {
     width: 100% !important;
+    border-left-width: 10px;
+  }
+  .ourTeam .team__cards .team__card .social {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   .contacts .container > h2 {
     display: none;
