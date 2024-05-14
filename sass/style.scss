@@ -42,7 +42,7 @@ button {
 @media screen and (max-width: 1200px) {
   .container {
     max-width: 992px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
   .vostoka .container {
     // border: 1px solid red;
@@ -207,7 +207,7 @@ button {
 @media screen and (max-width: 992px) {
   .container {
     max-width: 850px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
   .vostoka .container {
     // border: 1px solid red;
@@ -378,7 +378,7 @@ button {
 @media screen and (max-width: 768px) {
   .container {
     max-width: 650px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
   .vostoka .container {
     // border: 1px solid red;
@@ -575,7 +575,7 @@ button {
 @media screen and (max-width: 576px) {
   .container {
     max-width: 550px;
-    border: 1px solid black;
+    // border: 1px solid black;
   }
   .vostoka .container {
     // border: 1px solid red;
@@ -678,7 +678,7 @@ button {
 
   .ourWorks {
    .container > p{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 100%!important;
    }
     .cards {
@@ -725,7 +725,7 @@ button {
         // border: 1px solid blue;
         width: 100% !important;
         .paper__table {
-          border: 1px solid red;
+        //   border: 1px solid red;
           width: 100% !important;
           display: flex;
           flex-direction: row;
