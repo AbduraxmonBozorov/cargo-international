@@ -12,7 +12,8 @@
   margin: 0px auto;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -56,7 +57,7 @@ a, button {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   margin-right: 80px;
 }
 .main .vostoka .container .vostoka__text a {
@@ -66,11 +67,11 @@ a, button {
   line-height: 24px;
   text-align: left;
   color: #363738;
-  border-bottom: 3px solid #FFCE50;
+  border-bottom: 3px solid #ffce50;
   transition: all 0.3s linear;
 }
 .main .vostoka .container .vostoka__text a:hover {
-  color: #FFCE50;
+  color: #ffce50;
   border-color: #363738;
 }
 .main .vostoka .container .vostoka__img {
@@ -229,7 +230,7 @@ a, button {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
 }
 .main .ourWorks {
   margin-top: 120px;
@@ -250,7 +251,7 @@ a, button {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   margin-bottom: 56px;
 }
 .main .ourWorks .container .cards {
@@ -306,27 +307,27 @@ a, button {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   width: 100%;
 }
 .main .ourWorks .container .cards .card .card__text a {
   margin-top: 32px;
-  border-bottom: 3px solid #FFCE50;
+  border-bottom: 3px solid #ffce50;
   padding-bottom: 3px;
   color: #363738;
   transition: all 0.5s ease;
 }
 .main .ourWorks .container .cards .card .card__text a:hover {
-  color: #FFCE50;
+  color: #ffce50;
   border-color: #363738;
 }
 .main .clients {
   margin-top: 212px;
+  background-color: #0b7572;
 }
 .main .clients .container {
   padding: 85px 66px;
   height: 957px;
-  background-color: #0B7572;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -370,11 +371,11 @@ a, button {
   font-weight: 400;
   line-height: 16.5px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   margin-bottom: 32px;
 }
 .main .paper__category {
-  background-color: #0B7572;
+  background-color: #0b7572;
   margin-bottom: 8px;
 }
 .main .paper__category ul {
@@ -423,7 +424,7 @@ a, button {
   font-weight: 400;
   line-height: 18.9px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   margin-bottom: 10px;
 }
 .main table.paper__table td strong {
@@ -494,7 +495,7 @@ a, button {
 .main .steps .steps__cards .steps__cards__card .steps__card__text__line {
   width: 86px;
   height: 3px;
-  background-color: #FFCE50;
+  background-color: #ffce50;
 }
 .main .steps .steps__cards .steps__cards__card .steps__card__text__p {
   font-family: "PT Sans";
@@ -502,7 +503,7 @@ a, button {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
 }
 .main .clientsLogo {
   margin-top: 120px;
@@ -524,7 +525,7 @@ a, button {
   margin-top: 90px;
 }
 .main .clientsLogo .companies .company {
-  width: 25% !important;
+  width: 25%;
   height: 190px;
   border-right: 1px solid #d7d7dd;
   display: flex;
@@ -556,7 +557,7 @@ a, button {
   font-weight: 400;
   line-height: 21px;
   text-align: center;
-  color: #6B6B6C;
+  color: #6b6b6c;
 }
 .main .clientsLogo .companies .company4 {
   border: none;
@@ -584,7 +585,7 @@ a, button {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-left: 51px solid #0B7572;
+  border-left: 51px solid #0b7572;
   border-radius: 10px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   padding: 32px;
@@ -613,7 +614,7 @@ a, button {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  color: #6B6B6C;
+  color: #6b6b6c;
   margin-top: 12px;
 }
 .main .team__cards .team__card .team__card__text div.team__line {
@@ -628,7 +629,7 @@ a, button {
 .main .team__line {
   width: 86px;
   height: 3px;
-  background-color: #FFCE50;
+  background-color: #ffce50;
 }
 .main .contacts {
   margin-top: 130px;
@@ -712,7 +713,7 @@ a, button {
 
 .footer {
   margin-top: 166px;
-  background-color: #0B7572;
+  background-color: #0b7572;
   padding-top: 59px;
 }
 .footer .footerLinks {
@@ -790,4 +791,571 @@ a, button {
   letter-spacing: 0.16em;
   text-align: center;
   color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 992px;
+    border: 1px solid black;
+  }
+  .vostoka .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .vostoka .container .vostoka__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .vostoka .container .vostoka__text h1 {
+    text-align: center;
+  }
+  .vostoka .container .vostoka__text p {
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .vostoka .container .vostoka__text a {
+    margin-bottom: 73px;
+  }
+  .vostoka .container .vostoka__img {
+    width: 100% !important;
+    background-image: url("../imgs/vostoka2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .vostoka .container .vostoka__img img {
+    display: none;
+  }
+  .poisk .cards {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .poisk .cards .card {
+    border: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center !important;
+    gap: 32px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 16px;
+    width: 100% !important;
+    border-radius: 20px;
+  }
+  .poisk .cards .card .card2,
+  .poisk .cards .card .card1 {
+    padding-left: 0 !important;
+  }
+  .poisk .cards .card .card__img {
+    width: 92px !important;
+    height: 92px !important;
+  }
+  .ourWorks .cards {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ourWorks .cards .card {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card:hover {
+    transform: scale(1) !important;
+  }
+  .ourWorks .cards .card .card__img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card .card__img img {
+    width: 100% !important;
+    height: 500px !important;
+  }
+  .clients {
+    height: auto !important;
+  }
+  .clients .container {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .clients .container .client__text {
+    width: 50% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    margin-bottom: 48px;
+  }
+  .clients .container .paper {
+    width: 100% !important;
+  }
+  .clients .container .paper .paper__table {
+    width: 100% !important;
+  }
+  .steps .steps__card__img {
+    display: none !important;
+  }
+  .clientsLogo .companies {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .clientsLogo .company {
+    width: 50% !important;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .contacts .container > h2 {
+    display: none;
+  }
+  .contacts .info {
+    display: flex;
+    flex-direction: column !important;
+    gap: 64px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 850px;
+    border: 1px solid black;
+  }
+  .vostoka .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .vostoka .container .vostoka__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .vostoka .container .vostoka__text h1 {
+    text-align: center;
+  }
+  .vostoka .container .vostoka__text p {
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .vostoka .container .vostoka__text a {
+    margin-bottom: 73px;
+  }
+  .vostoka .container .vostoka__img {
+    width: 100% !important;
+    background-image: url("../imgs/vostoka2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .vostoka .container .vostoka__img img {
+    display: none;
+  }
+  .poisk .cards {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .poisk .cards .card {
+    border: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center !important;
+    gap: 32px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 16px;
+    width: 100% !important;
+    border-radius: 20px;
+  }
+  .poisk .cards .card .card2,
+  .poisk .cards .card .card1 {
+    padding-left: 0 !important;
+  }
+  .poisk .cards .card .card__img {
+    width: 92px !important;
+    height: 92px !important;
+  }
+  .ourWorks .cards {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ourWorks .cards .card {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card:hover {
+    transform: scale(1) !important;
+  }
+  .ourWorks .cards .card .card__img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card .card__img img {
+    width: 100% !important;
+    height: 500px !important;
+  }
+  .clients {
+    height: auto !important;
+  }
+  .clients .container {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .clients .container .client__text {
+    width: 50% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    margin-bottom: 48px;
+  }
+  .clients .container .paper {
+    width: 100% !important;
+  }
+  .clients .container .paper .paper__table {
+    width: 100% !important;
+  }
+  .steps .steps__card__img {
+    display: none !important;
+  }
+  .clientsLogo .companies {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .clientsLogo .company {
+    width: 50% !important;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .contacts .container > h2 {
+    display: none;
+  }
+  .contacts .info {
+    display: flex;
+    flex-direction: column !important;
+    gap: 64px;
+  }
+  .contacts .prceedings {
+    width: 100% !important;
+  }
+  .contacts .prceedings table {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 650px;
+    border: 1px solid black;
+  }
+  .vostoka .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .vostoka .container .vostoka__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .vostoka .container .vostoka__text h1 {
+    text-align: center;
+  }
+  .vostoka .container .vostoka__text p {
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .vostoka .container .vostoka__text a {
+    margin-bottom: 73px;
+  }
+  .vostoka .container .vostoka__img {
+    width: 100% !important;
+    background-image: url("../imgs/vostoka2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .vostoka .container .vostoka__img img {
+    display: none;
+  }
+  .poisk .cards {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .poisk .cards .card {
+    border: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center !important;
+    gap: 32px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 16px;
+    width: 100% !important;
+    border-radius: 20px;
+  }
+  .poisk .cards .card .card2,
+  .poisk .cards .card .card1 {
+    padding-left: 0 !important;
+  }
+  .poisk .cards .card .card__img {
+    width: 92px !important;
+    height: 92px !important;
+  }
+  .ourWorks .cards {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ourWorks .cards .card {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card:hover {
+    transform: scale(1) !important;
+  }
+  .ourWorks .cards .card .card__img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card .card__img img {
+    width: 100% !important;
+    height: 500px !important;
+  }
+  .clients {
+    height: auto !important;
+  }
+  .clients .container {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .clients .container .client__text {
+    width: 50% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    margin-bottom: 48px;
+  }
+  .clients .container .paper {
+    width: 100% !important;
+  }
+  .clients .container .paper .paper__table {
+    width: 100% !important;
+  }
+  .steps .steps__card__img {
+    display: none !important;
+  }
+  .clientsLogo .companies {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .clientsLogo .company {
+    width: 50% !important;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .ourTeam .team__cards .team__card {
+    width: 100% !important;
+  }
+  .contacts .container > h2 {
+    display: none;
+  }
+  .contacts .info {
+    display: flex;
+    flex-direction: column !important;
+    gap: 64px;
+  }
+  .contacts .prceedings {
+    width: 100% !important;
+  }
+  .contacts .prceedings table {
+    width: 100% !important;
+  }
+  .footer .footerLinks {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  .footer .footerLinks .footerLogo {
+    width: 100% !important;
+  }
+  .footer .footerLinks .footerSocial {
+    display: block;
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 550px;
+    border: 1px solid black;
+  }
+  .vostoka .container {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .vostoka .container .vostoka__text {
+    width: 100% !important;
+    display: flex;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .vostoka .container .vostoka__text h1 {
+    text-align: center;
+  }
+  .vostoka .container .vostoka__text p {
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .vostoka .container .vostoka__text a {
+    margin-bottom: 73px;
+  }
+  .vostoka .container .vostoka__img {
+    width: 100% !important;
+    background-image: url("../imgs/vostoka2.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .vostoka .container .vostoka__img img {
+    display: none;
+  }
+  .poisk .cards {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .poisk .cards .card {
+    border: none !important;
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: center !important;
+    gap: 32px !important;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15) !important;
+    margin-bottom: 16px;
+    width: 100% !important;
+    border-radius: 20px;
+  }
+  .poisk .cards .card .card2,
+  .poisk .cards .card .card1 {
+    padding-left: 0 !important;
+  }
+  .poisk .cards .card .card__img {
+    width: 92px !important;
+    height: 92px !important;
+  }
+  .pochemu img.mainImg {
+    display: none !important;
+  }
+  .pochemu img.pochemuSecondImg {
+    display: none;
+  }
+  .pochemu h2 {
+    z-index: 10 !important;
+    color: #363738 !important;
+  }
+  .ourWorks .cards {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .ourWorks .cards .card {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card:hover {
+    transform: scale(1) !important;
+  }
+  .ourWorks .cards .card .card__img {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .ourWorks .cards .card .card__img img {
+    width: 100% !important;
+    height: 500px !important;
+  }
+  .clients {
+    height: auto !important;
+  }
+  .clients .container {
+    height: auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+  .clients .container .client__text {
+    width: 50% !important;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    margin-bottom: 48px;
+  }
+  .clients .container .paper {
+    width: 100% !important;
+  }
+  .clients .container .paper .paper__table {
+    width: 100% !important;
+  }
+  .steps .steps__card__img {
+    display: none !important;
+  }
+  .clientsLogo .companies {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .clientsLogo .company {
+    width: 50% !important;
+  }
+  .video iframe {
+    width: 100%;
+  }
+  .ourTeam .team__cards .team__card {
+    width: 100% !important;
+  }
+  .contacts .container > h2 {
+    display: none;
+  }
+  .contacts .info {
+    display: flex;
+    flex-direction: column !important;
+    gap: 64px;
+  }
+  .contacts .prceedings {
+    width: 100% !important;
+  }
+  .contacts .prceedings table {
+    width: 100% !important;
+  }
+  .footer .footerLinks {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+  }
+  .footer .footerLinks .footerLogo {
+    width: 100% !important;
+  }
+  .footer .footerLinks .footerSocial {
+    display: block;
+    width: 100% !important;
+  }
 }/*# sourceMappingURL=style.css.map */

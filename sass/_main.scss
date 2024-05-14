@@ -329,10 +329,11 @@
   //   start clients style
   .clients {
     margin-top: 212px;
+    background-color: $green;
+
     .container {
       padding: 85px 66px;
       height: 957px;
-      background-color: $green;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -546,7 +547,7 @@
       flex-wrap: wrap;
       margin-top: 90px;
       .company {
-        width: 25% !important;
+        width: 25%;
         height: 190px;
         border-right: 1px solid #d7d7dd;
         @include dfrc($fd: column);
@@ -764,10 +765,6 @@
   // end video style
 
   //  /////// end main style  //////////////////
-
-
-
-
-
-
 }
+
+
