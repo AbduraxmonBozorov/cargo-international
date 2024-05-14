@@ -480,12 +480,11 @@
     }
 
     .steps__cards {
-    //   border: 1px solid red;
+      //   border: 1px solid red;
       display: flex;
       flex-direction: column;
       gap: 24px;
       padding-left: 49px;
-      
 
       .steps__cards__card {
         padding: 32px 132px 32px 96px;
@@ -495,8 +494,8 @@
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 12%);
         // border: 1px solid red;
 
-        .steps__card__img{
-            height: 100%;
+        .steps__card__img {
+          height: 100%;
         }
 
         .steps__card__text {
@@ -529,7 +528,246 @@
       }
     }
   }
-//   end steps style
+  //   end steps style
+
+  // start clientsLogo
+  .clientsLogo {
+    margin-top: 120px;
+    h2 {
+      font-family: "Exo 2";
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60px;
+      text-align: left;
+      color: $primary-color;
+    }
+    .companies {
+      @include dfrc();
+      flex-wrap: wrap;
+      margin-top: 90px;
+      .company {
+        width: 25% !important;
+        height: 190px;
+        border-right: 1px solid #d7d7dd;
+        @include dfrc($fd: column);
+        justify-content: space-between;
+        margin-bottom: 75px;
+        // border: 1px solid blue;
+        .comany__info {
+          // border: 1px solid green;
+          // height: 82px;
+          @include dfrc($fd: column, $jc: space-between);
+          h4 {
+            font-family: "Exo 2";
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 27px;
+            text-align: center;
+            color: $primary-color;
+            // border: 1px solid red;
+            margin-top: 32px;
+            margin-bottom: 14px;
+          }
+          p {
+            font-family: "PT Sans";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+            color: $secondary-color;
+          }
+        }
+      }
+      .company4 {
+        border: none;
+      }
+    }
+  }
+  // end clientsLogo
+
+  // start our team
+  .ourTeam {
+    margin-top: 130px;
+
+    h2 {
+      font-family: "Exo 2";
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60px;
+      text-align: left;
+      color: $primary-color;
+    }
+  }
+
+  .team__cards {
+    margin-top: 72px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px 24px;
+    // border: 1px solid red;
+
+    .team__card {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      border-left: 51px solid $green;
+      border-radius: 10px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 15%);
+      padding: 32px;
+      width: 48.5%;
+      // border: 1px solid red;
+      img.team__cards__img {
+        width: 138px;
+        height: 138px;
+      }
+      .team__card__text {
+        margin-left: 40px;
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid red;
+        h4 {
+          font-family: "Exo 2";
+          font-size: 20px;
+          font-weight: 600;
+          line-height: 24px;
+          text-align: left;
+          color: $primary-color;
+        }
+        a {
+          font-family: "PT Sans";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+          text-align: left;
+          color: $secondary-color;
+          margin-top: 12px;
+        }
+        div.team__line {
+          margin-top: 16px;
+        }
+        div.social {
+          display: flex;
+          flex-direction: row;
+          gap: 20px;
+          margin-top: 35px;
+        }
+      }
+    }
+  }
+
+  .team__line {
+    width: 86px;
+    height: 3px;
+    background-color: $yellow;
+  }
+  // end our team style
+
+  // start contacts style
+
+  .contacts {
+    margin-top: 130px;
+    h2 {
+      font-family: "Exo 2";
+      font-size: 48px;
+      font-weight: 600;
+      line-height: 60px;
+      text-align: left;
+      color: #363738;
+    }
+
+    .info {
+      margin-top: 94px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .contactInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+      width: 255px;
+    }
+
+    .contactInfo div {
+      display: flex;
+      flex-direction: row;
+      gap: 32px;
+      // border: 1px solid red;
+    }
+
+    .contactInfo div p {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .contactInfo div p span {
+      font-family: "PT Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 21px;
+      text-align: left;
+      color: #6b6b6c;
+    }
+
+    .contactInfo div p a {
+      font-family: "Exo 2";
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: left;
+      color: #363738;
+    }
+
+    .prceedings {
+      width: 794px;
+      background-color: #f9f9fb;
+    }
+
+    .prceedings table {
+      border-collapse: collapse;
+    }
+
+    .prceedings table td {
+      border-bottom: 1px solid #e9eaf2;
+      padding: 16px;
+    }
+
+    .prceedings table td p {
+      font-family: "PT Sans";
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+      color: #6b6b6c;
+    }
+
+    .prceedings table td h4 {
+      font-family: 'Exo 2';
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+      color: #363738;
+    }
+  }
+  // end contacts style
+
+
+  // start video style
+  .video{
+    margin-top: 46px;
+  }
+  // end video style
+
+  //  /////// end main style  //////////////////
+
+
+
+
 
 
 }

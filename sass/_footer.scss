@@ -1,0 +1,90 @@
+.footer {
+  margin-top: 166px;
+  background-color: $green;
+  padding-top: 59px;
+
+  .footerLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footerLinks ol,
+  .footerLinks ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footerLinks ol li a,
+  .footerLinks ul li a {
+    font-family: "Exo 2";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    letter-spacing: 0.16em;
+    text-align: center;
+    color: white;
+    &:hover {
+      text-decoration: underline solid white 1px;
+    }
+  }
+
+  .footerSocial {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footerSocial div {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .footerSocial a.footer_tel {
+    font-family: "Exo 2";
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    color: white;
+  }
+
+  .footerSocial button {
+    width: 271px;
+    height: 42px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    background-color: #ff9619;
+    border: none;
+    color: white;
+    &:hover {
+      background-color: #865314;
+    }
+  }
+  //   end footerLinks
+
+  //   start footerCopyRight
+  .footerCopyRight {
+    // border: 1px solid red;
+    margin-top: 51px;
+    padding: 29px 0;
+    p {
+      text-align: center;
+      font-family: 'Exo 2';
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 18px;
+      letter-spacing: 0.16em;
+      text-align: center;
+      color: white;
+    }
+  }
+}
